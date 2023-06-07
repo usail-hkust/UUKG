@@ -1,0 +1,10 @@
+geo_id,type,coordinates
+384,Point,"[]"
+546,Point,"[]"
+549,Point,"[]"
+835,Point,"[]"
+836,Point,"[]"
+852,Point,"[]"
+911,Point,"[]"
+913,Point,"[]"
+914,Point,"[]"

@@ -1,0 +1,12 @@
+geo_id,type,coordinates
+155,Point,"[]"
+213,Point,"[]"
+246,Point,"[]"
+277,Point,"[]"
+4090,Point,"[]"
+4095,Point,"[]"
+4098,Point,"[]"
+4191,Point,"[]"
+4699,Point,"[]"
+4801,Point,"[]"
+4878,Point,"[]"
