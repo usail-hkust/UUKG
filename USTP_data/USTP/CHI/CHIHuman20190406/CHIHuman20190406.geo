@@ -1,0 +1,11 @@
+geo_id,type,coordinates
+158.0,Point,"[]"
+303.0,Point,"[]"
+329.0,Point,"[]"
+331.0,Point,"[]"
+340.0,Point,"[]"
+343.0,Point,"[]"
+345.0,Point,"[]"
+830.0,Point,"[]"
+863.0,Point,"[]"
+866.0,Point,"[]"
