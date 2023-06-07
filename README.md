@@ -15,7 +15,7 @@
 </div>
 
 ## Overview
-UUKG is an open-sourced and multifaceted urban knowledge graph dataset compatible with various USTP tasks. As the original dataset is quite large, we have included example data, data processing code, and model code to assist readers in understanding our research. The complete data sources can be found on [Google Drive](https://drive.google.com/file/d/1P8h_jfchAIpkStz-oKd_yleSyE9OAvkm/view?usp=sharing).
+UUKG is an open-sourced and multifaceted urban knowledge graph dataset compatible with various USTP tasks. As the original dataset is quite large, we have included example data, data processing code, and model code to assist readers in understanding our research. The complete data sources can be found on [Google Drive](https://drive.google.com/drive/folders/1egTmnKRzTQuyW_hsbFURUonGC-bJmBHW?usp=sharing).
 
 ## Installation
 
