@@ -1,7 +1,7 @@
 <div align="center">
-    <img src="https://github.com/usail-hkust/UUKG/blob/main/title.png" width="550px">
+    <img src="https://github.com/usail-hkust/UUKG/blob/main/title.png" width="440px">
     <p> <b>
-        The unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction.</b>
+        The Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction.</b>
     </p>
 
 ------
