@@ -1,0 +1,5 @@
+{
+  "metrics": ["MAE", "RMSE", "micro-F1", "macro-F1"],
+  "evaluator_mode": "single",
+  "save_mode": ["csv"]
+}

@@ -1,0 +1,61 @@
+{
+    "traffic_state_pred": {
+        "allowed_model": [
+            "STGCN", "AGCRN","TGCN",
+            "ASTGCN", "MTGNN", "RNN", "LSTM", "GRU", "AutoEncoder", "ASTGCNCommon", "HGCN"
+        ],
+        "allowed_dataset": [
+            "All"
+        ],
+        "STGCN": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "AGCRN": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "TGCN": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "MTGNN": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "MTGNNExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "RNN": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "LSTM": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "GRU": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "AutoEncoder": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "ASTGCNCommon": {
+            "dataset_class": "TrafficStatePointDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+        "HGCN": {
+            "dataset_class": "HGCNDataset",
+            "executor": "TrafficStateExecutor",
+            "evaluator": "TrafficStateEvaluator"
+        },
+    }
+}

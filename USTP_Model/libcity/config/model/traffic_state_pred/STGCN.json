@@ -1,0 +1,27 @@
+{
+  "Ks": 3,
+  "Kt": 3,
+  "blocks": [[1, 32, 64], [64, 32, 128]],
+  "dropout": 0,
+  "graph_conv_type": "chebconv",
+  "stgcn_train_mode": "quick",
+  "bidir_adj_mx": true,
+
+  "scaler": "standard",
+  "load_external": false,
+  "normal_external": false,
+  "ext_scaler": "none",
+  "add_time_in_day": false,
+  "add_day_in_week": false,
+
+  "max_epoch": 200,
+  "learner": "adam",
+  "learning_rate": 0.001,
+  "lr_decay": true,
+  "lr_scheduler": "steplr",
+  "lr_decay_ratio": 0.7,
+  "step_size": 5,
+  "clip_grad_norm": false,
+  "use_early_stop": true,
+  "patience": 15
+}
