@@ -1,0 +1,7 @@
+,Unnamed: 0,name,poi_id,osm_way_id,building,amenity,leisure,area,area_ft2,lat,lng,cate,borough_id,area_id
+2,75712,McDonald's,727,40782742,yes,fast_food,,650.4,7001.3,41.9335827,-87.6688933,catering,6,6
+3,75713,Palace Grill Restaurant,742,40785416,yes,restaurant,,231.7,2494.3,41.8816916,-87.6625101,catering,6,28
+4,75714,McDonald's,763,41229497,yes,fast_food,,491.4,5289.6,41.9247671,-87.6719298,catering,6,7
+5,75715,Plymouth Rooftop Bar & Grill,985,73747639,yes,restaurant,,260.7,2806.1,41.8774742,-87.6284424,catering,6,32
+6,75716,Tutto Italiano,1006,74269722,yes,restaurant,,293.3,3156.9,41.8758143,-87.633326,catering,6,32
+11,75721,Bobtail Ice Cream & Coffee,3566,149987521,yes,ice_cream,,183.2,1971.9,41.8748289,-87.6186449,catering,6,32

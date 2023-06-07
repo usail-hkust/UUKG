@@ -1,0 +1,11 @@
+,name,poi_id,osm_way_id,building,amenity,leisure,area,area_ft2,lat,lng,cate
+75710,Olive Garden,299,28898739,yes,restaurant,,929.4,10003.7,42.0110474,-87.7120008,catering
+75711,Bison Prarie Grill,390,31467207,yes,fast_food,,365.6,3935.3,41.8321489,-87.8377976,catering
+75712,McDonald's,727,40782742,yes,fast_food,,650.4,7001.3,41.9335827,-87.6688933,catering
+75713,Palace Grill Restaurant,742,40785416,yes,restaurant,,231.7,2494.3,41.8816916,-87.6625101,catering
+75714,McDonald's,763,41229497,yes,fast_food,,491.4,5289.6,41.9247671,-87.6719298,catering
+75715,Plymouth Rooftop Bar & Grill,985,73747639,yes,restaurant,,260.7,2806.1,41.8774742,-87.6284424,catering
+75716,Tutto Italiano,1006,74269722,yes,restaurant,,293.3,3156.9,41.8758143,-87.633326,catering
+75717,,1249,114689751,restaurant,,,709.5,7637.1,41.9988724,-87.8852164,catering
+75718,Libanais,1714,130693541,yes,restaurant,,564,6070.7,41.9976966,-87.7122461,catering
+75719,Bunny Hutch,1765,130875880,yes,fast_food,,182.4,1963.6,41.9980815,-87.7205586,catering
