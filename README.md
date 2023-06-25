@@ -105,12 +105,10 @@ UUKG
 ## Reference
 If you find the code useful for your research, please consider citing
 ```bash
-@misc{ning2023uukg,
-      title={UUKG: Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction}, 
-      author={Yansong Ning and Hao Liu and Hao Wang and Zhenyu Zeng and Hui Xiong},
-      year={2023},
-      eprint={2306.11443},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI}
+@article{ning2023uukg,
+  title={UUKG: Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction},
+  author={Ning, Yansong and Liu, Hao and Wang, Hao and Zeng, Zhenyu and Xiong, Hui},
+  journal={arXiv preprint arXiv:2306.11443},
+  year={2023}
 }
 ```
