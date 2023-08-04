@@ -8,7 +8,7 @@ First, create a python 3.7 environment and install dependencies:
 
 ```bash
 conda create -n python3.7 UUKG
-conda source activate UUKG
+source activate UUKG
 pip install -r requirements.txt
 ```
 
