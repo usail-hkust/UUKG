@@ -18,7 +18,7 @@ The file information in each directory is as follows:
 Our urban spatiotemporal prediction dataset construction scheme is highly reusable. You can prepare your urban downstream task data following either the file format in **'./Meta_data'** or **'./Processed_data'**, and then run scripts **`construct_USTP_Pointflow_XXX.py`** or **`construct_USTP_Event_XXX.py`** to build your personalized USTP dataset. This flexibility allows you to adapt the construction process to various cities and datasets easily.
 
 ### Visualization
-<img src="[https://github.com/usail-hkust/UUKG/blob/main/USTP_data/bike_start_m.html](https://github.com/usail-hkust/UUKG/blob/main/USTP_data/bike_start_end.png)" width="650px">
+<img src="https://github.com/usail-hkust/UUKG/blob/main/USTP_data/bike_start_end.png" width="650px">
 
 We offer spatial and temporal visualization implement for all types of USTP dataset. By leveraging the powerful visualization capabilities of **Folium**, we provide an intuitive understanding of different USTP tasks. 
 
