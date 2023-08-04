@@ -19,7 +19,7 @@
 </div>
 
 ## 1. Overview
-<div style="display: flex; text-align: center;">
+<div style="display: flex; justify-content: center;">
   <img src="https://github.com/usail-hkust/UUKG/blob/main/workflow.png" width="400">
   <img src="https://github.com/usail-hkust/UUKG/blob/main/UrbanKG.png" width="300">
 </div>
