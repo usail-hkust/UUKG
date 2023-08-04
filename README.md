@@ -273,7 +273,7 @@ UUKG
 ```
 
 ## 6 Citation
-If you find our work is useful for your research, please consider citing
+If you find our work is useful for your research, please consider citing:
 ```bash
 @article{ning2023uukg,
   title={UUKG: Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction},
