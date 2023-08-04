@@ -2,7 +2,7 @@
     <img src="https://github.com/usail-hkust/UUKG/blob/main/title.png" width="440px">
     <p> 
     	<b>
-        The Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction. <a href="https://arxiv.org/pdf/2306.11443.pdf" title="PDF">
+        The Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction.
         </b>
     </p>
 
@@ -18,14 +18,14 @@
 </p>
 </div>
 
-## Overview
-<img src="https://github.com/usail-hkust/UUKG/blob/main/workflow.png" width="400">
+## 1. Overview [PDF](https://arxiv.org/pdf/2306.11443.pdf)
+<div style="display: flex; justify-content: center;">
+  <img src="https://github.com/usail-hkust/UUKG/blob/main/workflow.png" width="400">
+  <img src="https://github.com/usail-hkust/UUKG/blob/main/UrbanKG.png" width="400">
+</div>
 
-UUKG is an open-sourced and multifaceted urban knowledge graph dataset compatible with various USTP tasks. The above figure illustrates the workflow of UUKG construction. For a given city, we first construct an Urban Knowledge Graph (UrbanKG) from multi-sourced urban data. As shown in the following figure, by extracting and organizing entities (e.g., POIs, road segments, etc.) into a multi-relational heterogeneous graph, UrbanKG encodes various high order structural patterns in a unified configuration (i.e., a multi-scale spatial hierarchy), which facilitates joint processing for various downstream USTP tasks.
-
-<img src="https://github.com/usail-hkust/UUKG/blob/main/UrbanKG.png" width="400">
-
-## Installation
+UUKG is an open-sourced and multifaceted urban knowledge graph dataset compatible with various USTP tasks. The above left-figure illustrates the workflow of UUKG construction. For a given city, we first construct an Urban Knowledge Graph (UrbanKG) from multi-sourced urban data. As shown in the above right-figure, by extracting and organizing entities (e.g., POIs, road segments, etc.) into a multi-relational heterogeneous graph, UrbanKG encodes various high order structural patterns in a unified configuration (i.e., a multi-scale spatial hierarchy), which facilitates joint processing for various downstream USTP tasks.
+## 2. Installation
 Step 1: Create a python 3.7 environment and install dependencies:
 
 ```
@@ -42,15 +42,15 @@ pip install -r ./USTP_Model/requirements.txt
 
 You can also follow the **'./USTP_Model/readme.md'**  and  **'./UrbanKG_Embedding_Model/readme.md'** files to install related packages.
 
-## Dataset
+## 3. Dataset
 
 As the original dataset is quite large, we have included example data, data processing code, and model code to assist researchers in understanding our work. The complete data sources can be found on [Google Drive](https://drive.google.com/drive/folders/1egTmnKRzTQuyW_hsbFURUonGC-bJmBHW?usp=sharing).
 
 We provide very detailed explanation for our data and pre-processing module in both [UrbanKG construction](https://github.com/usail-hkust/UUKG/tree/main/UrbanKG_data) and [USTP dataset construction](https://github.com/usail-hkust/UUKG/tree/main/USTP_data). The above dataset construction scheme is highly reusable, one can prepare their own urban data and use our code to build their personalized UrbanKG and USTP dataset easily. 
 
-#### UrbanKG Data
+#### 3.1 UrbanKG Data
 
-##### Guidance on data usage and processing
+##### 3.1.1 Guidance on data usage and processing
 
 We store the original unprocessed files in the **'./Meta_data'** directory. To preprocess, align, and filter these files, we utilize either the **`preprocess_meta_data_nyc.py`** or **`preprocess_meta_data_chi.py`** script. The processed data is then saved in the **'./Processed_data'** directory. Finally, we execute the **`construct_UrbanKG_NYC.py`** or **`construct_UrbanKG_CHI.py`** script to obtain the constructed urban knowledge graphs, which are stored in the **'./UrbanKG'** directory.
 
@@ -64,19 +64,19 @@ The file information in each directory is as follows:
 ./UrbanKG    City fact triples obtained from 8 entities and 13 relationships
 ```
 
-##### To create your urban knowledge graph dataset
+##### 3.1.2 To create your urban knowledge graph dataset
 Our urban knowledge graph construction scheme is highly reusable. You can prepare your urban data following either the file format in **'./Meta_data'** or **'./Processed_data'**, and then run scripts **`construct_UrbanKG_XXX.py`** to build your personalized urban knowledge graph. This flexibility allows you to adapt the construction process to various cities and datasets easily.
 
-##### Visualization
+##### 3.1.3 Visualization
 <img src="https://github.com/usail-hkust/UUKG/blob/main/UrbanKG_data/visualization.png" width="440px">
 
 We offer comprehensive visualization solutions for all types of urban knowledge. By leveraging the powerful visualization capabilities of **Folium**, we provide an intuitive understanding of the urban entities and relationships encoded in the constructed urban knowledge map. This allows users to interact with and explore the urban knowledge graph in a user-friendly manner, facilitating better insights and analysis of the urban data.
 
 You can run **`UrbanKG_visulization_XXX.py`** to get the overall visualization of urban entities like borough, area, POI and road segment. You can also develop other visualization function according to your preferences.
 
-#### USTP Data
+#### 3.2 USTP Data
 
-##### Guidance on data usage and processing
+##### 3.2.1 Guidance on data usage and processing
 
 We store the original unprocessed files in the **'./Meta_data'** directory. To preprocess, align, and filter these files, we utilize either the **`preprocess_meta_data_nyc.py`** or **`preprocess_meta_data_chi.py`** script. The processed data is then saved in the **'./Processed_data'** directory. 
 
@@ -92,19 +92,19 @@ The file information in each directory is as follows:
 ./USTP    The reformatted USTP dataset is now ready for use with downstream USTP models. 
 ```
 
-##### To create your USTP dataset
+##### 3.2.2 To create your USTP dataset
 Our urban spatiotemporal prediction dataset construction scheme is highly reusable. You can prepare your urban downstream task data following either the file format in **'./Meta_data'** or **'./Processed_data'**, and then run scripts **`construct_USTP_Pointflow_XXX.py`** or **`construct_USTP_Event_XXX.py`** to build your personalized USTP dataset. This flexibility allows you to adapt the construction process to various cities and datasets easily.
 
-##### Visualization
+##### 3.2.3 Visualization
 <img src="https://github.com/usail-hkust/UUKG/blob/main/USTP_data/bike_start_end.png" width="650px">
 
 We offer spatial and temporal visualization implement for all types of USTP dataset. By leveraging the powerful visualization capabilities of **Folium**, we provide an intuitive understanding of different USTP tasks. 
 
 You can run **`visualize_USTP.py`** to get the overall spatial and temporal distribution of USTP dataset. You can also develop other visualization function according to your preferences.
 
-## How to Run
+## 4. How to Run
 
-#### Structure-aware UrbanKG Embedding
+#### 4.1 Structure-aware UrbanKG Embedding
 
 To train and evaluate a UrbanKG embedding model for the link prediction task, use the run.py script:
 
@@ -122,7 +122,7 @@ python ./UrbanKG_Embedding_Model/run.py
               [--dtype {single,double}] [--double_neg] [--debug] [--multi_c]
 
 ```
-#### Knowledge-enhanced Urban SpatioTemporal Prediction
+#### 4.2 Knowledge-enhanced Urban SpatioTemporal Prediction
 
 To train and evaluate a USTP model for the link prediction task, use the run.py script:
 
@@ -133,7 +133,7 @@ This script will run the STGCN model on the NYCTaxi20200406 dataset for traffic 
 
 The **"readme.md"** file in [USTP_Model](https://github.com/usail-hkust/UUKG/tree/main/USTP_Model) and [UrbanKG_Embedding_Model](https://github.com/usail-hkust/UUKG/tree/main/UrbanKG_Embedding_Model) provide more details about models.
 
-## Directory Structure
+## 5 Directory Structure
 
 The expected structure of files is:
 ```
@@ -207,7 +207,7 @@ UUKG
 
 ```
 
-## Citation
+## 6 Citation
 If you find our work is useful for your research, please consider citing
 ```bash
 @article{ning2023uukg,
