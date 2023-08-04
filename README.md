@@ -46,7 +46,12 @@ You can also follow the **'./USTP_Model/readme.md'**  and  **'./UrbanKG_Embeddin
 
 ## 3. Dataset
 
-As the original dataset is quite large, we have included example data, data processing code, and model code to assist researchers in understanding our work. The complete data sources can be found on [Google Drive](https://drive.google.com/drive/folders/1egTmnKRzTQuyW_hsbFURUonGC-bJmBHW?usp=sharing).
+| Dataset | Entity  | Relation | Triplet | Train   | Valid  | Test   |
+| ------- | ------- | -------- | ------- | ------- | ------ | ------ |
+| NYC     | 236,287 | 13       | 930,240 | 837,216 | 46,512 | 46,512 |
+| CHI     | 140,602 | 13       | 564,400 | 507,960 | 28,220 | 28,220 |
+
+We opensource two large-scale Urban Knowledge Graph (UrbanKG) dataset in New York and Chicago. As the original dataset is quite large, we have included example data, data processing code, and model code to assist researchers in understanding our work. The complete data sources can be found on [Google Drive](https://drive.google.com/drive/folders/1egTmnKRzTQuyW_hsbFURUonGC-bJmBHW?usp=sharing).
 
 We provide very detailed explanation for our data and pre-processing module in both [UrbanKG construction](https://github.com/usail-hkust/UUKG/tree/main/UrbanKG_data) and [USTP dataset construction](https://github.com/usail-hkust/UUKG/tree/main/USTP_data). The above dataset construction scheme is highly reusable, one can prepare their own urban data and use our code to build their personalized UrbanKG and USTP dataset easily. 
 
