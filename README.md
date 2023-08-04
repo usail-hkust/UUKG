@@ -98,6 +98,51 @@ The file information in each directory is as follows:
 ./Processed_data   Aligned datasets: taxi, bike, human, crime and 311 service spatiotemporal dataset which are aligned with area, road and POI.
 ./USTP    The reformatted USTP dataset is now ready for use with downstream USTP models. 
 ```
+The following types of atomic files are defined:
+
+| filename    | content                                  | example                                  |
+| ----------- | ---------------------------------------- | ---------------------------------------- |
+| xxx.geo     | Store geographic entity attribute information. | geo_id, type, coordinates                |
+| xxx.rel     | Store the relationship information between entities, such as areas. | rel_id, type, origin_id, destination_id  |
+| xxx.dyna    | Store traffic condition information.     | dyna_id, type, time, entity_id, location_id |
+| config.json | Used to supplement the description of the above table information. |                                          |
+
+we explain the above four atomic files as follows:
+
+**xxx.geo**: An element in the Geo table consists of the following four parts:
+
+**geo_id, type, coordinates.**
+
+```
+geo_id: The primary key uniquely determines a geo entity.
+type: The type of geo. These three values are consistent with the points, lines and planes in Geojson.
+coordinates: Array or nested array composed of float type. Describe the location information of the geo entity, using the coordinates format of Geojson.
+```
+
+**xxx.rel**: An element in the Rel table consists of the following four parts:
+
+**rel_id, type, origin_id, destination_id.**
+
+```
+rel_id: The primary key uniquely determines the relationship between entities.
+type: The type of rel. Range in [usr, geo], which indicates whether the relationship is based on geo or usr.
+origin_id: The ID of the origin of the relationship, which is either in the Geo table or in the Usr table.
+destination_id: The ID of the destination of the relationship, which is one of the Geo table or the Usr table.
+```
+
+**xxx.dyna**: An element in the Dyna table consists of the following five parts:
+
+**dyna_id, type, time, entity_id(multiple columns**.
+
+```
+dyna_id: The primary key uniquely determines a record in the Dyna table.
+type: The type of dyna. There are two values: label (for event-based task) and state (for traffic state prediction task).
+time: Time information, using the date and time combination notation in ISO-8601 standard, such as: 2020-12-07T02:59:46Z.
+entity_id: Describe which entity the record is based on, which is the ID of geo or usr.
+```
+
+**xxx.config**: The config file is used to supplement the information describing the above five tables themselves. It is stored in `json` format and consists of six keys: `geo`, `usr`, `rel`, `dyna`, `ext`, and `info`.
+
 
 ##### 3.2.2 To create your USTP dataset
 Our urban spatiotemporal prediction dataset construction scheme is highly reusable. You can prepare your urban downstream task data following either the file format in **'./Meta_data'** or **'./Processed_data'**, and then run scripts **`construct_USTP_Pointflow_XXX.py`** or **`construct_USTP_Event_XXX.py`** to build your personalized USTP dataset. This flexibility allows you to adapt the construction process to various cities and datasets easily.
