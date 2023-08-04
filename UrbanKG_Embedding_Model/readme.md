@@ -7,15 +7,9 @@ This code is the official PyTorch implementation of [UUKG: Unified Urban Knowled
 First, create a python 3.7 environment and install dependencies:
 
 ```bash
-virtualenv -p python3.7 UUKG
-source UUKG/bin/activate
+conda create -n python3.7 UUKG
+conda source activate UUKG
 pip install -r requirements.txt
-```
-
-Then, set environment variables and activate your environment:
-
-```bash
-source set_env.sh
 ```
 
 ## Datasets
