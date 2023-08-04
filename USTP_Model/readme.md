@@ -51,7 +51,7 @@ The following types of atomic files are defined:
 
 we explain the above four atomic files as follows:
 
-xxx.geo: An element in the Geo table consists of the following four parts:
+**xxx.geo**: An element in the Geo table consists of the following four parts:
 
 **geo_id, type, coordinates.**
 
@@ -61,7 +61,8 @@ type: The type of geo. These three values are consistent with the points, lines 
 coordinates: Array or nested array composed of float type. Describe the location information of the geo entity, using the coordinates format of Geojson.
 ```
 
-xxx.rel: An element in the Rel table consists of the following four parts:
+**xxx.rel**: An element in the Rel table consists of the following four parts:
+
 **rel_id, type, origin_id, destination_id.**
 
 ```
@@ -71,7 +72,7 @@ origin_id: The ID of the origin of the relationship, which is either in the Geo 
 destination_id: The ID of the destination of the relationship, which is one of the Geo table or the Usr table.
 ```
 
-xxx.dyna: An element in the Dyna table consists of the following five parts:
+**xxx.dyna**: An element in the Dyna table consists of the following five parts:
 
 **dyna_id, type, time, entity_id(multiple columns**.
 
@@ -82,7 +83,7 @@ time: Time information, using the date and time combination notation in ISO-8601
 entity_id: Describe which entity the record is based on, which is the ID of geo or usr.
 ```
 
-xxx.config: The config file is used to supplement the information describing the above five tables themselves. It is stored in `json` format and consists of six keys: `geo`, `usr`, `rel`, `dyna`, `ext`, and `info`.
+**xxx.config**: The config file is used to supplement the information describing the above five tables themselves. It is stored in `json` format and consists of six keys: `geo`, `usr`, `rel`, `dyna`, `ext`, and `info`.
 
 ## Quick to Usage
 
