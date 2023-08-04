@@ -12,6 +12,18 @@ The file information in each directory is as follows:
 ./UrbanKG    City fact triples obtained from 8 entities and 13 relationships
 ```
 
+The following types of atomic files are defined:
+
+| filename            | content                                 | example              |
+| ------------------- | --------------------------------------- | -------------------- |
+| entity2id_XXX.txt   | entity_name, entity_id                  | Road/106710 11       |
+| relation2id_XXX.txt | relation_name, relation_id              | BNB 2                |
+| train               | entity_id, relation_id, entity_id       | 196632  12 85987     |
+| valid               | entity_id, relation_id, entity_id       | 43982   10 233474    |
+| test                | entity_id, relation_id, entity_id       | 167134  6  75149     |
+| triplet.txt         | entity_id, relation_id, entity_id       | 48034   12 168303    |
+| UrbanKG_XXX.txt     | entity_name, relation_name, entity_name | POI/663 PLA Area/230 |
+
 ### To create your urban knowledge graph dataset
 Our urban knowledge graph construction scheme is highly reusable. You can prepare your urban data following either the file format in **'./Meta_data'** or **'./Processed_data'**, and then run scripts **`construct_UrbanKG_XXX.py`** to build your personalized urban knowledge graph. This flexibility allows you to adapt the construction process to various cities and datasets easily.
 
