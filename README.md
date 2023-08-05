@@ -45,17 +45,16 @@ pip install -r ./USTP_Model/requirements.txt
 You can also follow the **'./USTP_Model/readme.md'**  and  **'./UrbanKG_Embedding_Model/readme.md'** files to install related packages.
 
 ## 3. Dataset
+We opensource two large-scale Urban Knowledge Graph (UrbanKG) datasets in New York and Chicago compatible with five Urban SpatioTemporal Prediction (USTP) tasks. As the original dataset is quite large, we have included example data, data processing code, and model code to assist researchers in understanding our work. The complete data sources can be found on [Google Drive](https://drive.google.com/drive/folders/1egTmnKRzTQuyW_hsbFURUonGC-bJmBHW?usp=sharing).
+
+We provide very detailed explanation for our data and pre-processing module in both [UrbanKG construction](https://github.com/usail-hkust/UUKG/tree/main/UrbanKG_data) and [USTP dataset construction](https://github.com/usail-hkust/UUKG/tree/main/USTP_data). The above dataset construction scheme is highly reusable, one can prepare their own urban data and use our code to build their personalized UrbanKG and USTP dataset easily. 
+
+#### 3.1 UrbanKG Data
 
 | Dataset | Entity  | Relation | Triplet | Train   | Valid  | Test   |
 | ------- | ------- | -------- | ------- | ------- | ------ | ------ |
 | NYC     | 236,287 | 13       | 930,240 | 837,216 | 46,512 | 46,512 |
 | CHI     | 140,602 | 13       | 564,400 | 507,960 | 28,220 | 28,220 |
-
-We opensource two large-scale Urban Knowledge Graph (UrbanKG) dataset in New York and Chicago. As the original dataset is quite large, we have included example data, data processing code, and model code to assist researchers in understanding our work. The complete data sources can be found on [Google Drive](https://drive.google.com/drive/folders/1egTmnKRzTQuyW_hsbFURUonGC-bJmBHW?usp=sharing).
-
-We provide very detailed explanation for our data and pre-processing module in both [UrbanKG construction](https://github.com/usail-hkust/UUKG/tree/main/UrbanKG_data) and [USTP dataset construction](https://github.com/usail-hkust/UUKG/tree/main/USTP_data). The above dataset construction scheme is highly reusable, one can prepare their own urban data and use our code to build their personalized UrbanKG and USTP dataset easily. 
-
-#### 3.1 UrbanKG Data
 
 ##### 3.1.1 Guidance on data usage and processing
 
@@ -95,6 +94,10 @@ We offer comprehensive visualization solutions for all types of urban knowledge.
 You can run **`UrbanKG_visulization_XXX.py`** to get the overall visualization of urban entities like borough, area, POI and road segment. You can also develop other visualization function according to your preferences.
 
 #### 3.2 USTP Data
+
+|Type|Urban ST Flow Prediction|||Urban ST Event Prediction||
+|Dataset|Taxi|Bike|Human|Crime|311 service|
+|Sensor|region-level|road-level|POI-level|region-level||
 
 ##### 3.2.1 Guidance on data usage and processing
 
