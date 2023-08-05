@@ -12,7 +12,7 @@
   <a href="## Overview">Overview</a> •
   <a href="## Installation">Installation</a> •
   <a href="## Dataset">Dataset</a> •
-  <a href="## How to Run">How to Run Model</a> •
+  <a href="## How to Run">How to Run </a> •
   <a href="## Directory Structure">Directory Structure</a> •
   <a href="## Citation">Citation</a> 
 </p>
