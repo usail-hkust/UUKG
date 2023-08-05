@@ -95,9 +95,10 @@ You can run **`UrbanKG_visulization_XXX.py`** to get the overall visualization o
 
 #### 3.2 USTP Data
 
-|Type|Urban ST Flow Prediction|||Urban ST Event Prediction||
-|Dataset|Taxi|Bike|Human|Crime|311 service|
-|Sensor|region-level|road-level|POI-level|region-level||
+| Type | USTP Flow Prediction  | USTP Event Prediction  |
+| ------- | -------  | ------ |
+| Dataset  | Taxi, Bike, Human Mobility | crime, 311 service |
+| Sensor | region-level, road-level, POI-level | region-level |
 
 ##### 3.2.1 Guidance on data usage and processing
 
