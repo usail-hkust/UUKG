@@ -22,8 +22,8 @@ Official repository of paper ["UUKG: The Unified Urban Knowledge Graph Dataset f
 
 ## 1. Overview
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/usail-hkust/UUKG/blob/main/workflow.png" width="400">
-  <img src="https://github.com/usail-hkust/UUKG/blob/main/UrbanKG.png" width="300">
+  <img src="https://github.com/usail-hkust/UUKG/blob/main/workflow.png" width="500">
+  <img src="https://github.com/usail-hkust/UUKG/blob/main/UrbanKG.png" width="400">
 </div>
 
 UUKG is an open-sourced and multifaceted urban knowledge graph dataset compatible with various USTP tasks. The above left-figure illustrates the workflow of UUKG construction. For a given city, we first construct an Urban Knowledge Graph (UrbanKG) from multi-sourced urban data. As shown in the above right-figure, by extracting and organizing entities (e.g., POIs, road segments, etc.) into a multi-relational heterogeneous graph, UrbanKG encodes various high order structural patterns in a unified configuration (i.e., a multi-scale spatial hierarchy), which facilitates joint processing for various downstream USTP tasks.
