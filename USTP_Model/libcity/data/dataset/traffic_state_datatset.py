@@ -630,6 +630,16 @@ class TrafficStateDataset(AbstractDataset):
                         data_ind = np.tile(data_ind, [1, num_nodes, 1]).transpose((2, 1, 0))
                         data_list.append(data_ind)
         data = np.concatenate(data_list, axis=-1)
+
+        # region_embeddings = np.load("XXX/NYC_area_embeddingn.npy")
+        # region_embeddings_plus = np.zeros([260, 32])
+        # for i in range(region_embeddings.shape[0]):
+        #     region_embeddings_plus[i] = region_embeddings[i]
+
+        # new_data = np.zeros([data.shape[0], data.shape[1], data.shape[2] + region_embeddings_plus.shape[1]])
+        # for k in range(data.shape[0]):
+        #     new_data[k] = np.concatenate([data[k], region_embeddings_plus], axis=1)
+        # return new_data
         return data
 
     def _add_external_information_4d(self, df, ext_data=None):
@@ -677,6 +687,17 @@ class TrafficStateDataset(AbstractDataset):
                         data_ind = np.tile(data_ind, [1, len_row, len_column, 1]).transpose((3, 1, 2, 0))
                         data_list.append(data_ind)
         data = np.concatenate(data_list, axis=-1)
+
+        # region_embeddings = np.load("XXX/NYC_area_embeddingn.npy")
+        # region_embeddings_plus = np.zeros([260, 32])
+        # for i in range(region_embeddings.shape[0]):
+        #     region_embeddings_plus[i] = region_embeddings[i]
+
+        # new_data = np.zeros([data.shape[0], data.shape[1], data.shape[2] + region_embeddings_plus.shape[1]])
+        # for k in range(data.shape[0]):
+        #     new_data[k] = np.concatenate([data[k], region_embeddings_plus], axis=1)
+        # return new_data
+        
         return data
 
     def _add_external_information_6d(self, df, ext_data=None):
