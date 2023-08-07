@@ -91,6 +91,10 @@ python run.py --task traffic_state_pred --model STGCN --dataset NYCTaxi20200406
 
 This script will run the STGCN model on the NYCTaxi20200406 dataset for traffic state prediction task under the default configuration.
 
+**How to fuse UrbanKG embedding?**
+
+To fuse UrbanKG embedding, we directly concatenate the embedding with USTP feature for input. You can mannualy modify it in the **./data/dataset/traffic_state_dataset.py**.
+
 ## Create your own dataset
 
 We support adding new spatiotemporal flow prediction and spatiotemporal event prediction datasets. You can build your own datasets based on existing datasets format in **./raw_data** and evaluate different methods under our framework.
