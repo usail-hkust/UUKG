@@ -191,6 +191,10 @@ python ./UrbanKG_Embedding_Model/run.py
               [--dtype {single,double}] [--double_neg] [--debug] [--multi_c]
 
 ```
+**How to get the embedding?**
+
+We build the index between entities and learned embeddings and storage the index file in **./data/entity_idx_embedding.csv**. To obtain the learned UrbanKG embedding, run **`get_embedding.py`**.
+
 #### 4.2 Knowledge-enhanced Urban SpatioTemporal Prediction
 
 To train and evaluate a USTP model for the link prediction task, use the run.py script:
