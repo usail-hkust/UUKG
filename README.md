@@ -206,7 +206,7 @@ This script will run the STGCN model on the NYCTaxi20200406 dataset for traffic 
 
 **How to fuse UrbanKG embedding?**
 
-To fuse UrbanKG embedding, we directly concatenate the embedding with USTP feature for input. You can mannualy modify it in the **./data/dataset/traffic_state_dataset.py**.
+To fuse UrbanKG embedding, we directly concatenate the embedding with USTP feature for input. You can mannualy modify it in the **`./data/dataset/traffic_state_dataset.py`**.
 
 The **"readme.md"** file in [USTP_Model](https://github.com/usail-hkust/UUKG/tree/main/USTP_Model) and [UrbanKG_Embedding_Model](https://github.com/usail-hkust/UUKG/tree/main/UrbanKG_Embedding_Model) provide more details about models.
 
