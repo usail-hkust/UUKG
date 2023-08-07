@@ -37,6 +37,10 @@ usage: run.py [-h] [--dataset {NYC, CHI}]
               [--dtype {single,double}] [--double_neg] [--debug] [--multi_c]
 
 ```
+## How to get the embedding
+
+We build the index between entities and learned embeddings and storage the index file in **./data/entity_idx_embedding.csv**. To obtain the learned UrbanKG embedding, run **`get_embedding.py`**.
+
 
 ## New models
 
