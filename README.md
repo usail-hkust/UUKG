@@ -18,7 +18,7 @@
 </p>
 </div>
 
-Official repository of paper ["UUKG: The Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction"](https://arxiv.org/pdf/2306.11443.pdf). Please star, watch and fork our repo for the active updates!
+Official repository of NeurIPS 2023 Dataset and Benchmark Track paper ["UUKG: The Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction"](https://arxiv.org/pdf/2306.11443.pdf). Please star, watch and fork our repo for the active updates!
 
 ## 1. Overview
 <div style="display: flex; justify-content: center;">
