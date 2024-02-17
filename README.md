@@ -287,10 +287,11 @@ UUKG
 ## 6 Citation
 If you find our work is useful for your research, please consider citing:
 ```bash
-@article{ning2023uukg,
-  title={UUKG: Unified Urban Knowledge Graph Dataset for Urban Spatiotemporal Prediction},
+@article{ning2024uukg,
+  title={UUKG: unified urban knowledge graph dataset for urban spatiotemporal prediction},
   author={Ning, Yansong and Liu, Hao and Wang, Hao and Zeng, Zhenyu and Xiong, Hui},
-  journal={arXiv preprint arXiv:2306.11443},
-  year={2023}
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
 }
 ```
